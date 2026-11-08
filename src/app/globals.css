@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-bebas: 'Bebas Neue', 'Anton', 'Impact', 'Arial Black', sans-serif;
+  --brand-red: #E8202A;
+  --brand-red-dark: #B7121B;
+  --brand-orange: #F7941D;
+  --brand-black: #0B0B0B;
+  --brand-white: #FFFFFF;
+  --brand-cream: #FFF7EC;
+  --brand-cream-light: #FFFDF9;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #FFFDF9;
+  color: #0B0B0B;
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Eliminate 300ms tap delay on mobile buttons & interactive elements */
+a, button, input, select, textarea, [role="button"] {
+  touch-action: manipulation;
+}
+
+/* Accessible focus styling */
+:focus-visible {
+  outline: 3px solid #E8202A;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile sticky action bar spacing safeguard */
+.has-sticky-bar {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .has-sticky-bar {
+    padding-bottom: 0;
+  }
+}
+
+/* Momentum scrolling for iOS & Android */
+.smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom scrollbar for category tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* GPU acceleration for smooth transitions */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}

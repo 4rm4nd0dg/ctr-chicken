@@ -1,0 +1,171 @@
+{
+  "restaurant": {
+    "nom": "Chitir Chicken",
+    "marque": "CTR Chicken",
+    "slogan": "Chicken Taste Revolution",
+    "accroche": "Fried Chicken & More",
+    "devise": "FCFA",
+    "horaires": "Ouvert 24h/24 et 7j/7",
+    "services": ["Commande", "Livraison"],
+    "contact": {
+      "telephones": ["+226 56 75 91 91", "+226 45 51 76 76"],
+      "whatsapp": "+22656759191"
+    },
+    "reseaux": "Chitir Chicken Burkina (Facebook, Instagram, TikTok)",
+    "points_de_vente": [
+      {
+        "nom": "Chitir Chicken Kamboinsin",
+        "adresse": "Ouaga 2000 - Kamsonghin, route de Kamboinsin / Tampouy",
+        "note": "Ouverture annoncée le jeudi 27 août"
+      },
+      {
+        "nom": "Chitir Chicken Ouaga 2000",
+        "adresse": "[À COMPLÉTER]"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "top-sellers",
+      "nom": "Top Sellers",
+      "note": "Servis avec frites ou chips de pelure + boisson",
+      "items": [
+        { "nom": "Chicken Mexican Burger Menu", "prix": 5500 },
+        { "nom": "Chicken Burger Menu", "prix": 5000 },
+        { "nom": "Chicken Cheese Burger Menu", "prix": 5500 },
+        { "nom": "Boneless Menu", "description": "3 tenders, 5 hot bites", "prix": 6500 }
+      ]
+    },
+    {
+      "id": "signature-snack",
+      "nom": "Signature Snack",
+      "note": "Frites garnies. Croustillant signature !",
+      "items": [
+        { "nom": "Garlic Bowl", "description": "Frites + tenders + sauce à l'ail", "prix": { "Moyen": 4000, "Moyen avec boisson": 4500, "Large": 5000, "Large avec boisson": 5500 } },
+        { "nom": "Chitir Bowl", "description": "Frites + tenders + sauce paprika", "prix": { "Moyen": 4000, "Moyen avec boisson": 4500, "Large": 5000, "Large avec boisson": 5500 } },
+        { "nom": "Sambal Bowl", "description": "Frites + tenders + sauce épicée", "epice": true, "prix": { "Moyen": 4000, "Moyen avec boisson": 4500, "Large": 5000, "Large avec boisson": 5500 } }
+      ]
+    },
+    {
+      "id": "chicken-burgers-wraps",
+      "nom": "Chicken Burgers & Wraps",
+      "note": "Prix unique 5500 FCFA. Servis avec frites ou chips de pelure + boisson",
+      "items": [
+        { "numero": 1, "nom": "Chitir Burger", "prix": 5500 },
+        { "numero": 2, "nom": "Garlic Chitir Burger", "prix": 5500 },
+        { "numero": 3, "nom": "Hot Chitir Burger", "epice": true, "prix": 5500 },
+        { "numero": 4, "nom": "Tornado Wrap", "prix": 5500 },
+        { "numero": 5, "nom": "Hot Tornado Wrap", "epice": true, "prix": 5500 },
+        { "numero": 6, "nom": "Garlic Tornado Wrap", "prix": 5500 }
+      ]
+    },
+    {
+      "id": "chicken-lovers",
+      "nom": "Chicken Lovers",
+      "items": [
+        { "numero": 7, "nom": "Oha-Yo Menu", "description": "1 Chitir Burger, 2 ailes de poulet épicées, 3 hot bites, salade de choux, frites ou chips de pelure, boisson", "prix": 7500 },
+        { "numero": 8, "nom": "Tokyo Menu", "description": "1 cuisse de poulet, 2 ailes de poulet épicées, 1 tender, 2 hot bites, 1 pain à l'ail, frites ou chips de pelure, boisson", "prix": 7000 },
+        { "numero": 9, "nom": "Ouagalais Menu", "description": "2 hauts de cuisses épicés, 1 tender, frites ou chips de pelure, boisson", "prix": 4500 },
+        { "numero": 10, "nom": "Tenders Menu", "description": "Servi avec frites ou chips de pelure + boisson", "prix": { "4 pièces": 5000, "5 pièces": 6000, "7 pièces": 7000 } }
+      ]
+    },
+    {
+      "id": "grilled-burgers-wraps",
+      "nom": "Grilled Burgers & Wraps",
+      "note": "Servis avec frites ou chips de pelure + boisson",
+      "items": [
+        { "numero": 11, "nom": "Beef Burger Menu", "prix": 5000 },
+        { "numero": 12, "nom": "Cheeseburger Menu", "prix": 5500 },
+        { "numero": 13, "nom": "Double Beef Burger Menu", "prix": 5500 },
+        { "numero": 14, "nom": "Grilled Chicken Burger Menu", "prix": 5500 },
+        { "numero": 15, "nom": "Grilled Chicken Wrap Menu", "prix": 5000 }
+      ]
+    },
+    {
+      "id": "bucket-feast",
+      "nom": "Bucket Feast",
+      "items": [
+        { "numero": 16, "nom": "Mix Bucket", "personnes": "3", "description": "9 ailes de poulet épicées, 9 tenders, 3 pains à l'ail, grandes frites ou chips de pelures, 2 boissons", "prix": 14500 },
+        { "numero": 17, "nom": "Show Bucket", "personnes": "2-3", "description": "3 cuisses de poulet, 3 tenders, 6 ailes de poulet épicées, 3 pains à l'ail, grandes frites ou chips de pelures, 2 boissons", "prix": 12000 },
+        { "numero": 18, "nom": "Grand Mix", "personnes": "2-3", "description": "2 cuisses de poulet, 6 ailes de poulet épicées, 4 tenders, grandes frites ou chips de pelures, pain à l'ail, 2 boissons", "prix": 11000 },
+        { "numero": 19, "nom": "Ouaga Max Bucket", "personnes": "2-3", "description": "5 hauts de cuisses épicés, 3 ailes de poulet épicées, 5 tenders, frites ou chips de pelures, 2 boissons", "prix": 13000 },
+        { "numero": 20, "nom": "Dream Bucket", "description": "2 hamburgers au poulet panés, 4 ailes de poulet épicées, 8 hot bites, 2 frites ou chips de pelures, 2 boissons", "prix": 13500 },
+        { "numero": 21, "nom": "Taeks Chicken", "description": "4 cuisses de poulet, 4 hot bites, 6 tenders, 2 frites ou chips de pelures, 2 boissons", "prix": 12500 },
+        { "numero": 22, "nom": "Drum Sticks", "description": "8 cuisses de poulet, 4 hot bites, 1 salade de choux, 2 frites ou chips de pelures, 2 boissons", "prix": 13500 }
+      ]
+    },
+    {
+      "id": "combos-kids",
+      "nom": "Combos & Kids Menu",
+      "items": [
+        { "nom": "Chicken Combo #1", "description": "1 cuisse de poulet, 4 ailes de poulet épicées, 3 tenders, 1 salade de chou, frites ou chips de pelure, 1 boisson", "prix": 8500 },
+        { "nom": "Chicken Combo #2", "description": "3 hauts de cuisses de poulet, 2 tenders, frites ou chips de pelure, 1 boisson", "prix": 7000 },
+        { "nom": "CTR Kids Menu", "description": "Mini Chitir Burger ou 2 tenders, avec des frites et un jus de fruits", "prix": 4500 }
+      ]
+    },
+    {
+      "id": "extras-poulet",
+      "nom": "Extras - Poulet pané à la pièce",
+      "items": [
+        { "nom": "Tenders panés", "prix": { "1 pièce": 1000, "2 pièces": 1500, "4 pièces": 3000, "6 pièces": 4500 } },
+        { "nom": "Ailes panées épicées", "epice": true, "prix": { "1 pièce": 1000, "2 pièces": 1500, "4 pièces": 3000, "6 pièces": 4500 } },
+        { "nom": "Cuisses panées", "prix": { "1 pièce": 1500, "2 pièces": 2500, "4 pièces": 5000, "6 pièces": 7500 } },
+        { "nom": "Hot Bite panés", "prix": { "4 pièces": 1500, "6 pièces": 2000 } }
+      ]
+    },
+    {
+      "id": "extras-burgers-wraps",
+      "nom": "Extras - Burgers & Wraps à la carte",
+      "items": [
+        { "nom": "Chitir Burger", "prix": 3500 },
+        { "nom": "Hot Chitir Burger", "epice": true, "prix": 3500 },
+        { "nom": "Garlic Chitir Burger", "prix": 3500 },
+        { "nom": "Beef Burger", "prix": 3000 },
+        { "nom": "Cheeseburger", "prix": 3500 },
+        { "nom": "Double Beef Burger", "prix": 3500 },
+        { "nom": "Grilled Chicken Burger", "prix": 3500 },
+        { "nom": "Tornado Wrap", "prix": 3500 },
+        { "nom": "Hot Tornado Wrap", "epice": true, "prix": 3500 },
+        { "nom": "Garlic Tornado Wrap", "prix": 3500 },
+        { "nom": "Grilled Chicken Wrap", "prix": 3000 }
+      ]
+    },
+    {
+      "id": "accompagnements",
+      "nom": "Accompagnements, sauces et boissons",
+      "items": [
+        { "nom": "Fromage", "prix": 500 },
+        { "nom": "Salade de chou", "prix": 500 },
+        { "nom": "Frites / Chips de pelure", "prix": 1000 },
+        { "nom": "Pain à l'ail", "prix": 300 },
+        { "nom": "Sauce mayonnaise", "prix": 100 },
+        { "nom": "Sauce ketchup", "prix": 100 },
+        { "nom": "Sauce barbecue", "prix": 200 },
+        { "nom": "Sauce piment", "epice": true, "prix": 200 },
+        { "nom": "Boisson", "prix": 1000 },
+        { "nom": "Eau", "prix": 500 }
+      ]
+    },
+    {
+      "id": "chitir-glaces",
+      "nom": "Chitir Glaces",
+      "items": [
+        { "nom": "Glace à la vanille", "prix": 1500 },
+        { "nom": "Glace au chocolat", "prix": 1500 },
+        { "nom": "Glace chocolat-vanille", "prix": 1500 }
+      ]
+    },
+    {
+      "id": "espresso-et-plus",
+      "nom": "Chitir Espresso et plus",
+      "items": [
+        { "nom": "Espresso", "prix": 1500 },
+        { "nom": "Café Americano", "prix": 1500 },
+        { "nom": "Cappuccino", "prix": 2000 },
+        { "nom": "Café Latte", "prix": 2000 },
+        { "nom": "Flat White", "prix": 2000 },
+        { "nom": "Lait chaud", "prix": 1000 }
+      ]
+    }
+  ]
+}
