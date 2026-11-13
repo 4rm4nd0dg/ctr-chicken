@@ -11,7 +11,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#E8202A",
-  "background_color": "#FFFDF9",
+  "background_color": "#FFFFFF",
   "categories": ["food", "restaurants"],
   "icons": [
     {
