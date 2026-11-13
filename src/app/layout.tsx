@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { CartProvider } from '@/context/CartContext';
 import { Header } from '@/components/layout/Header';
@@ -6,6 +6,18 @@ import { Footer } from '@/components/layout/Footer';
 import { StickyActionBar } from '@/components/layout/StickyActionBar';
 import { CartDrawer } from '@/components/cart/CartDrawer';
 import { SkipToContent } from '@/components/ui/SkipToContent';
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#E8202A' },
+    { media: '(prefers-color-scheme: dark)', color: '#E8202A' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  viewportFit: 'cover',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://chitirchicken-ouaga.bf'),
@@ -27,6 +39,17 @@ export const metadata: Metadata = {
     'Ouaga 2000 livraison',
     'chicken bucket Ouaga',
   ],
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'CTR Chicken',
+    startupImage: [
+      {
+        url: '/icons/icon-512.png',
+      },
+    ],
+  },
   authors: [{ name: 'Chitir Chicken Burkina' }],
   creator: 'Chitir Chicken Burkina',
   publisher: 'CTR Chicken',
@@ -59,8 +82,15 @@ export const metadata: Metadata = {
     images: ['/images/hero-chicken.webp'],
   },
   icons: {
-    icon: '/images/icon-192.webp',
-    apple: '/images/icon-192.webp',
+    icon: [
+      { url: '/icons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    shortcut: '/icons/icon-192.png',
+    apple: [
+      { url: '/icons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 };
 
